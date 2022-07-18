@@ -25,6 +25,8 @@ function calculation(value) {
         }
         b = '';
         display(a);
+        history(value);
+        sign = value;
     }
     else if(a!=='') {
         history(value);
