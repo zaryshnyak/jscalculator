@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="calculator.js"></script>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td id="history" colspan="4" style="background-color: gray"></td>
+    </tr>
+    <tr>
+        <td id="result" colspan="4" style="background-color: gray"></td>
+    </tr>
+    <tr><td><button id="+" onclick="calculation('+')">+</button></td>
+        <td><button id="-" onclick="calculation('-')">-</button></td>
+        <td><button id="*" onclick="calculation('*')">x</button></td>
+        <td><button id="/" onclick="calculation('/')">/</button></td>
+    </tr>
+    <tr>
+        <td><button id="7" onclick="number('7')">7</button></td>
+        <td><button id="8" onclick="number('8')">8</button></td>
+        <td><button id="9" onclick="number('9')">9</button></td>
+        <td rowspan="4" style="background-color: orange"><button onclick="result()">=</button></td>
+    </tr>
+    <tr>
+        <td><button id="4" onclick="number('4')">4</button></td>
+        <td><button id="5" onclick="number('5')">5</button></td>
+        <td><button id="6" onclick="number('6')">6</button></td>
+    </tr>
+    <tr>
+        <td><button id="1" onclick="number('1')">1</button></td>
+        <td><button id="2" onclick="number('2')">2</button></td>
+        <td><button id="3" onclick="number('3')">3</button></td>
+    </tr>
+    <tr>
+        <td><button id="0" onclick="number('0')">0</button></td>
+        <td><button id="." onclick="number('.')">.</button></td>
+        <td><button id="<" onclick="removeNumber()"><</button></td>
+    </tr>
+</table>
+</body>
+</html>
