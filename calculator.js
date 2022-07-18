@@ -34,11 +34,21 @@ function calculation(value) {
 
 function number(value){
     if (sign !== null){
-        b += value;
+        if (b === '0' && value!=='.'){
+            b = value;
+        }
+        else {
+            b += value;
+        }
         display(b);
     }
     else {
-        a += value;
+        if (a === '0' && value!=='.'){
+            a = value;
+        }
+        else {
+            a += value;
+        }
         display(a);
     }
     history(value);
